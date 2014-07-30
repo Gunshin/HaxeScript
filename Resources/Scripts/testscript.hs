@@ -1,4 +1,2 @@
 
-increment();
-increment();
-increment();
+trace("hello from script");

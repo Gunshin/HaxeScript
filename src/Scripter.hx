@@ -1,11 +1,11 @@
 package;
 
-import cs.internal.Function;
 import haxe.Log;
 import hscript.Expr;
 import hscript.Interp;
 import hscript.Parser;
 
+import sys.io.FileInput;
 import sys.io.File;
 import sys.FileSystem;
 
@@ -29,17 +29,22 @@ class Scripter
 
 	public function new(path_:String) 
 	{
-		//var parser = new Parser();
+		var parser = new Parser();
 		
-		//interp = new Interp();
+		interp = new Interp();
 		
 		//cScript = parser.parseString(File.getContent(path_));
 	}
 
-	public function AddFunction(name_:String, func_:Action_0):Void
+	/*public function AddFunction(name_:String, func_:Action_0):Void
 	{
-		func_.Invoke();
-		//scriptVars.set(name_, func_);
+		//func_.Invoke();
+		scriptVars.set(name_, func_);
+	}*/
+	
+	public function AddFunction(name_:String, func_:cs.system.Action_1<String>):Void
+	{
+		scriptVars.set(name_, func_.AsDelegate());
 	}
 	
 	public function Run():Void

@@ -1,6 +1,6 @@
 -cs cs
 -D no-compilation
 -cp src
--cp ../../../../../../HaxeToolkit/haxe/lib/hscript/2,0,1
+-lib hscript
 Scripter
 -cmd gmcs -target:library -out:bin\Scripter.dll -recurse:cs\src\*.cs
