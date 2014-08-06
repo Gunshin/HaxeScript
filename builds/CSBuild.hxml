@@ -1,0 +1,6 @@
+-cs bin/CS
+-D net-ver=40
+-D dll
+-cp src
+-lib hscript
+Scripter

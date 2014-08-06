@@ -1,0 +1,7 @@
+-cs cs
+-D net-ver=40
+-D no-compilation
+-cp src
+-lib hscript
+Scripter
+-cmd smcs -target:library -out:bin\Unity\Scripter.dll -recurse:cs\src\*.cs
