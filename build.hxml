@@ -3,4 +3,4 @@
 -cp src
 -lib hscript
 Scripter
--cmd gmcs -target:library -out:bin\Scripter.dll -recurse:cs\src\*.cs
+-cmd smcs -target:library -out:bin\Scripter.dll -recurse:cs\src\*.cs
