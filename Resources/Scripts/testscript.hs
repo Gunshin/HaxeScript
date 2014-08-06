@@ -1,2 +1,0 @@
-
-trace("hello from script");

@@ -1,6 +1,0 @@
--cs cs
--D no-compilation
--cp src
--lib hscript
-Scripter
--cmd smcs -target:library -out:bin\Scripter.dll -recurse:cs\src\*.cs
