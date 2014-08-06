@@ -10,3 +10,5 @@ Build out the DLL with the bat files for your relevant needs.
 
 Unity - Must have Unity installed and have set environment path to the correct bin folder (mine is: 'C:\Program Files (x86)\Unity\Editor\Data\Mono\bin')
 
+CS - Must have .net 4.0 as System.Func requires it
+
