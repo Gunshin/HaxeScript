@@ -26,13 +26,27 @@ class Scripter
 	
 	var cScript:Expr;
 	
-	public function new(path_:String) 
+	public function new()
+	{
+		
+	}
+	
+	public function LoadFromFile(path_:String) 
 	{
 		var parser = new Parser();
 		
 		interp = new Interp();
 		
 		cScript = parser.parseString(File.getContent(path_));
+	}
+	
+	public function LoadFromString(contents_:String)
+	{
+		var parser = new Parser();
+		
+		interp = new Interp();
+		
+		cScript = parser.parseString(contents_);
 	}
 	
 	public function AddVariable<T>(name_:String, variable_:T)
