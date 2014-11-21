@@ -3,5 +3,5 @@
 -D no-compilation
 -cp src
 -lib hscript
-Scripter
--cmd smcs -target:library -out:bin\Unity\Scripter.dll -recurse:bin\Unity\src\*.cs
+scripter.Scripter
+-cmd "C:\Program Files (x86)\Unity\Editor\Data\Mono\bin\smcs" -target:library -out:bin\Unity\Scripter.dll -recurse:bin\Unity\src\*.cs

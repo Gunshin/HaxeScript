@@ -1,4 +1,4 @@
-package;
+package scripter;
 
 import cs.Lib;
 import haxe.Log;
